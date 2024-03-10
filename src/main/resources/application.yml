@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/gestionstock?createDatabaseIfNotExist=true&useSSL=false&Unicode=true&serverTimezone=UTC
+    username: lelouch
+    password: h
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+  main:
+   allow-bean-definition-overriding: true
+   allow-circular-references: true
+  
+  jpa:
+   database: MYSQL
+   show-sql: true
+   properties:
+   
+
+# hibarnate ddl auto (auto,create-drop, update)
+    hibernate:
+     ddl-auto: update
+    # dialect: org.hibernate.dialect.MYSQL5Dialect
+      
+server:
+  port: 8081
+
+flickr:
+  apikeys: 4749db58bd34d6d8ef21e7d197a5cc17
+  apisecret: a1081e0fd643f895
+  
+  appkeys: 72157720878490294-9a84dc1f99471ea9
+  appsecret: 92e8400a71d91465
